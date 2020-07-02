@@ -155,7 +155,7 @@ namespace Project.Models
             Assert.AreEqual(3,attributeList.Count);
             Assert.AreEqual("Guid",attributeList.Where(x => x.name == "id").First().type);
             Assert.AreEqual("string",attributeList.Where(x => x.name == "name").First().type);
-            Assert.AreEqual("Guid?",attributeList.Where(x => x.name == "clientid").First().type);
+            Assert.AreEqual("Guid?",attributeList.Where(x => x.name == "clientId").First().type);
         }
 
                 [Test]
@@ -274,36 +274,36 @@ namespace Project.Models
             parser.Visit(parser.GetRoot(code));
             List<AttributeInfo> attributeList = parser.models["IAccount"];
             Assert.AreEqual(30,attributeList.Count);
-            Assert.AreEqual("byte",attributeList.Where(x => x.name == "byteattribute").First().type);
-            Assert.AreEqual("byte?",attributeList.Where(x => x.name == "nullbyteattribute").First().type);
-            Assert.AreEqual("sbyte",attributeList.Where(x => x.name == "sbyteattribute").First().type);
-            Assert.AreEqual("sbyte?",attributeList.Where(x => x.name == "nullsbyteattribute").First().type);
-            Assert.AreEqual("short",attributeList.Where(x => x.name == "shortattribute").First().type);
-            Assert.AreEqual("short?",attributeList.Where(x => x.name == "nullshortattribute").First().type);
-            Assert.AreEqual("ushort",attributeList.Where(x => x.name == "ushortattribute").First().type);
-            Assert.AreEqual("ushort?",attributeList.Where(x => x.name == "nullushortattribute").First().type);
-            Assert.AreEqual("int",attributeList.Where(x => x.name == "intattribute").First().type);
-            Assert.AreEqual("int?",attributeList.Where(x => x.name == "nullintattribute").First().type);
-            Assert.AreEqual("uint",attributeList.Where(x => x.name == "uintattribute").First().type);
-            Assert.AreEqual("uint?",attributeList.Where(x => x.name == "nulluintattribute").First().type);
-            Assert.AreEqual("long",attributeList.Where(x => x.name == "longattribute").First().type);
-            Assert.AreEqual("long?",attributeList.Where(x => x.name == "nulllongattribute").First().type);
-            Assert.AreEqual("ulong",attributeList.Where(x => x.name == "ulongattribute").First().type);
-            Assert.AreEqual("ulong?",attributeList.Where(x => x.name == "nullulongattribute").First().type);
-            Assert.AreEqual("float",attributeList.Where(x => x.name == "floatattribute").First().type);
-            Assert.AreEqual("float?",attributeList.Where(x => x.name == "nullfloatattribute").First().type);
-            Assert.AreEqual("double",attributeList.Where(x => x.name == "doubleattribute").First().type);
-            Assert.AreEqual("double?",attributeList.Where(x => x.name == "nulldoubleattribute").First().type);
-            Assert.AreEqual("decimal",attributeList.Where(x => x.name == "decimalattribute").First().type);
-            Assert.AreEqual("decimal?",attributeList.Where(x => x.name == "nulldecimalattribute").First().type);
-            Assert.AreEqual("char",attributeList.Where(x => x.name == "charattribute").First().type);
-            Assert.AreEqual("char?",attributeList.Where(x => x.name == "nullcharattribute").First().type);
-            Assert.AreEqual("bool",attributeList.Where(x => x.name == "boolattribute").First().type);
-            Assert.AreEqual("bool?",attributeList.Where(x => x.name == "nullboolattribute").First().type);
-            Assert.AreEqual("object",attributeList.Where(x => x.name == "objectattribute").First().type);
-            Assert.AreEqual("string",attributeList.Where(x => x.name == "stringattribute").First().type);
-            Assert.AreEqual("DateTime",attributeList.Where(x => x.name == "datetimeattribute").First().type);
-            Assert.AreEqual("CustomObject",attributeList.Where(x => x.name == "customobjectattribute").First().type);
+            Assert.AreEqual("byte",attributeList.Where(x => x.name == "byteAttribute").First().type);
+            Assert.AreEqual("byte?",attributeList.Where(x => x.name == "nullByteAttribute").First().type);
+            Assert.AreEqual("sbyte",attributeList.Where(x => x.name == "sbyteAttribute").First().type);
+            Assert.AreEqual("sbyte?",attributeList.Where(x => x.name == "nullSbyteAttribute").First().type);
+            Assert.AreEqual("short",attributeList.Where(x => x.name == "shortAttribute").First().type);
+            Assert.AreEqual("short?",attributeList.Where(x => x.name == "nullShortAttribute").First().type);
+            Assert.AreEqual("ushort",attributeList.Where(x => x.name == "ushortAttribute").First().type);
+            Assert.AreEqual("ushort?",attributeList.Where(x => x.name == "nullUshortAttribute").First().type);
+            Assert.AreEqual("int",attributeList.Where(x => x.name == "intAttribute").First().type);
+            Assert.AreEqual("int?",attributeList.Where(x => x.name == "nullIntAttribute").First().type);
+            Assert.AreEqual("uint",attributeList.Where(x => x.name == "uintAttribute").First().type);
+            Assert.AreEqual("uint?",attributeList.Where(x => x.name == "nullUintAttribute").First().type);
+            Assert.AreEqual("long",attributeList.Where(x => x.name == "longAttribute").First().type);
+            Assert.AreEqual("long?",attributeList.Where(x => x.name == "nullLongAttribute").First().type);
+            Assert.AreEqual("ulong",attributeList.Where(x => x.name == "ulongAttribute").First().type);
+            Assert.AreEqual("ulong?",attributeList.Where(x => x.name == "nullUlongAttribute").First().type);
+            Assert.AreEqual("float",attributeList.Where(x => x.name == "floatAttribute").First().type);
+            Assert.AreEqual("float?",attributeList.Where(x => x.name == "nullFloatAttribute").First().type);
+            Assert.AreEqual("double",attributeList.Where(x => x.name == "doubleAttribute").First().type);
+            Assert.AreEqual("double?",attributeList.Where(x => x.name == "nullDoubleAttribute").First().type);
+            Assert.AreEqual("decimal",attributeList.Where(x => x.name == "decimalAttribute").First().type);
+            Assert.AreEqual("decimal?",attributeList.Where(x => x.name == "nullDecimalAttribute").First().type);
+            Assert.AreEqual("char",attributeList.Where(x => x.name == "charAttribute").First().type);
+            Assert.AreEqual("char?",attributeList.Where(x => x.name == "nullCharAttribute").First().type);
+            Assert.AreEqual("bool",attributeList.Where(x => x.name == "boolAttribute").First().type);
+            Assert.AreEqual("bool?",attributeList.Where(x => x.name == "nullBoolAttribute").First().type);
+            Assert.AreEqual("object",attributeList.Where(x => x.name == "objectAttribute").First().type);
+            Assert.AreEqual("string",attributeList.Where(x => x.name == "stringAttribute").First().type);
+            Assert.AreEqual("DateTime",attributeList.Where(x => x.name == "dateTimeAttribute").First().type);
+            Assert.AreEqual("CustomObject",attributeList.Where(x => x.name == "customObjectAttribute").First().type);
         }
 
 
